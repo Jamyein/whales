@@ -1,0 +1,17 @@
+{
+  "name": "whales",
+  "version": "0.2.0",
+  "description": "",
+  "private": true,
+  "keywords": [
+    "whales",
+    "Hexo",
+    "Themes"
+  ],
+  "author": {
+    "email": "myein@citrusea.cc",
+    "name": "myein",
+    "url": "https://citrusea.cc"
+  },
+  "license": "MIT"
+}

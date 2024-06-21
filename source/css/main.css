@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap');
+
+:root{
+  --text-color-:#1b1a1a;
+  --font-family: "PingFang SC", "LXGW WenKai", 'Times New Roman', 'Noto Serif SC', serif,"Microsoft YaHei", sans-serif;
+  --change-color:#AB545A;
+}
+
+a{
+  color: var(--text-color-);
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  font-size: 18px;
+  overflow-y: scroll;
+  color: var(--text-color);
+  margin: 0 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #adaaaa;
+  }
+  body {
+    background-color: #121212;
+  }
+  .markdown-body img {
+    filter: brightness(0.7); /* 使图片变暗，0.7 表示亮度降低到70% */
+  }
+}
+.main {
+  width: 40em;
+  max-width: 620px;
+}
+
+#avatar {
+  display:flex;
+  align-items: flex-start;
+  margin-top: 8em;
+  flex-direction: column;
+}
+
+#avatars {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+#author-name {
+  font-size: 28px;
+  margin-top: 1.2em;
+  letter-spacing: 1px;
+  font-family: Segoe UI;
+}
+
+#menu-outer {
+  display: flex;
+  column-gap: 10px;
+}
+#menu-outer a {
+  color: #718096;
+  font-size: 1.1em;
+}
+#menu-outer a:hover,
+#menu-outer a.active {
+  color: #3e3e3e;
+}
+
+#content-outer .recent-post-item,
+#content-outer .archive-item,
+#content-outer .category-item {
+  line-height: 1.6rem;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+#content-outer .recent-post-item time,
+#content-outer .archive-item time,
+#content-outer .category-item time {
+  color: #7D7C7C;
+}
+#paginator {
+  margin-top: 3rem;
+  text-align: end;
+}
+#paginator span{
+  margin: 0 0.3rem;
+}
+#paginator a{
+  color: var(--change-color);
+  margin: 0 0.3rem;
+}
+
+ul.category-list {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  column-gap: 10px;
+  padding: 0px;
+}
+ul.archive-list {
+  list-style: none;
+  padding: 0px;
+}
+ul.category-list a,
+ul.archive-list a {
+   color: var(--text-color);
+}
+#bottom-outer-in {
+  font-size: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  color: #ada69c;
+  font-family: var(--font-family);
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+#bottom-outer-in a{
+  color: #ada69c;
+  font-family: var(--font-family);
+}
+
+article#post > h1#post-title {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+article#post > #post-memu {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+
+.post-date-cayegories{
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.post-author,
+.post-date,
+.post-categories {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.recent-post-item a,
+.archive-item a,
+.category-item a,
+.post-categories a,
+.post-author a{
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.35s, text-decoration 0.35s;
+}
+.recent-post-item a:hover,
+.archive-item a:hover,
+.category-item a:hover,
+.post-categories a:hover,
+.post-author a:hover,
+.markdown-body a:hover,
+#bottom-outer-in a:hover {
+  color: #AB545A;
+  text-decoration: underline;
+}
+
+.post-nav {
+  display: flex;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 5rem;
+  border-top: 1px;
+  line-height: 1.4;
+}
+.post-nav .post-nav-item {
+  border-bottom: 0;
+  padding-bottom: 10px;
+  width: 50%;
+  padding-top: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.post-nav .post-nav-item .post-title {
+  color: var(--text-color);
+}
+.post-nav .post-nav-item:hover .post-title,
+.post-nav .post-nav-item:focus .post-title {
+  color: #AB545A;
+  opacity: 0.9;
+}
+.post-nav .post-nav-item .nav-arrow {
+  color: gray;
+  margin-bottom: 3px;
+}
+.post-nav .post-nav-item:nth-child(odd) {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.post-nav .post-nav-item:nth-child(even) {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 20px;
+}
+.post-nav .post-nav-item {
+  width: 100%;
+}
+.post-nav .post-nav-item:nth-child(even) {
+  border-left: 0;
+  padding-left: 0;
+  border-top: 1px;
+}

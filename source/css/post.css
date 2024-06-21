@@ -1,0 +1,348 @@
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #eaecef;
+}
+.hljs,
+.hljs-subst,
+.hljs-tag {
+  color: #b5b5b5;
+}
+.hljs-emphasis,
+.hljs-strong {
+  color: #848480;
+}
+.hljs-bullet,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-quote,
+.hljs-regexp {
+  color: #ae81ff;
+}
+.hljs-code,
+.hljs-section,
+.hljs-selector-class,
+.hljs-title {
+  color: #355f35;
+}
+.hljs-strong {
+  font-weight: 700;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-attr,
+.hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  color: #115864;
+}
+.hljs-attribute,
+.hljs-symbol {
+  color: #752544;
+}
+.hljs-class .hljs-title,
+.hljs-params {
+  color: #243265;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-attr,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-string,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: #8b3422;
+}
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+.markdown-body {
+  font-weight: 500;
+  margin: 0 auto;
+  line-height: 1.8em;
+}
+
+/* title*/
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.markdown-body h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.3em;
+}
+.markdown-body h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.3em;
+}
+.markdown-body h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.markdown-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.markdown-body h5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.markdown-body h6 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6a737d;
+}
+
+/*link*/
+.markdown-body a {
+  color: #a56569;
+  text-decoration: none;
+  transition: color 0.35s, text-decoration 0.35s;
+}
+
+/*list*/
+.markdown-body ol,
+.markdown-body ul {
+  padding: 0 15px;
+}
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+/*image*/
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+  margin-top: 30px;
+  display: block;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*quote*/
+.markdown-body blockquote {
+  padding: 10px 30px;
+  line-height: 1.4;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #8b8b8b21;
+  border-radius: 28px;
+
+}
+/*
+.markdown-body blockquote:before {
+  content: "";
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  border-bottom: 5px solid #AB545A;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.markdown-body blockquote::after {
+  content: "";
+  top: 16px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  border-bottom: 3px solid #feb6a2;
+  height: 3px;
+  width: 100px;
+}
+*/
+
+.markdown-body .highlight {
+  color: #ccc;
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  margin: 0;
+}
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+.markdown-body .highlight table td {
+  padding: 0;
+  border: none;
+}
+
+.markdown-body .highlight table tr {
+  border: none;
+}
+
+.markdown-body .highlight .gutter pre {
+  color: #999;
+  font-size: 12px;
+}
+
+.highlight .code pre {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #2d2d2d !important;
+}
+
+.markdown-body table th {
+  font-weight: 700;
+}
+
+.markdown-body table th {
+  padding: 6px 13px;
+  /*border: 1px solid #dfe2e5;*/
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body code {
+  padding: 8px 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  white-space: pre;
+}
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: SFMono-Regular, Consolas,"Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body pre[class*="language-"] {
+  color: #f9f9f9;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: 600;
+  font-weight: bolder;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  background: 0 0;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body kbd {
+  display: block;
+  padding: 3px 5px;
+  font-size: 0.6875rem;
+  line-height: 0.625rem;
+  color: #444d56;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 0.6875rem SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 0.625rem;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+.markdown-body :checked + .radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+.markdown-body .task-list-item + .task-list-item {
+  margin-top: 3px;
+}
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+.markdown-body .image-caption {
+  text-align: center;
+  font-size: 17px;
+  display: block;
+}

@@ -1,0 +1,14 @@
+<!-- 页脚 -->
+<div id="bottom-outer-in">
+    <div id="bottom-inner">
+    		<%= theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY') ? theme.since + '-' : '' %><%= date(new Date(), 'YYYY') %> <%= config.title %>
+
+    </div>
+    <% if(theme.social.enable) { %>
+        <div id="social-link" class="social-link">
+            <a href="<%=theme.social.rss%>">RSS</a>
+            <a href="<%=theme.social.email%>">Email</a>
+            <a href="<%=theme.social.github%>">Github</a>
+        </div>
+    <% } %>
+</div>

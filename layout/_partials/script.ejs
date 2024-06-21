@@ -1,0 +1,15 @@
+<!-- 脚本 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var avatarContainer = document.getElementById("avatar");
+      var currentPath = window.location.pathname;
+  
+      // 使用正则表达式匹配需要显示头像的页面
+      var pagesToShowAvatar = /^\/($|index.html|home|about|categories|page|archives|email)/; // 匹配以 /home, /profile, 或 /dashboard 开头的路径
+  
+      // 如果当前路径不匹配这些正则表达式，则隐藏头像容器
+      if (!pagesToShowAvatar.test(currentPath)) {
+        avatarContainer.style.display = "none";
+      }
+    })
+  </script>

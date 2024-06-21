@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<% var title=page.title; if (is_archive()) { title=__('archive_a') + (is_month() ? ': ' + page.year + '/' + page.month :
+    is_year() ? ': ' + page.year : '' ); } else if (is_category()) { title=__('category') + ': ' + page.category; } else
+    if (is_tag()) { title=__('tag') + ': ' + page.tag; } %>
+
+<title>
+    <% if (title){ %>
+        <%= title %> |
+            <% } %>
+                <%= config.title %>
+</title>
+
+<link rel="icon" href="<%- url_for('/img/favicon.ico')%>">
+<link rel="preload" href="<%= url_for('/css/main.css') %>" as="style">
+<link rel="stylesheet" href="<%= url_for('/css/main.css') %>">
+<link rel="stylesheet" href="<%= url_for('/css/post.css') %>">

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<head>
+    <%-partial('_partials/head')%>
+</head>
+
+<body>
+<div class="main">
+    <%-partial('_partials/header')%>
+    <div id="content-outer">
+        <%- body %>
+    </div>
+    
+    <%-partial('_partials/foobar', {}, {cache: true})%>
+</div>
+
+<%-partial('_partials/script', {}, {cache: true})%>
+</body>
+</html>

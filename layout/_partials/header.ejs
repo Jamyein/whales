@@ -1,0 +1,12 @@
+<!-- 头像 -->
+<div id="avatar" class="">
+    <img src="<%= theme.site.avatar %>" id="avatars" loading="lazy">
+    <h2 id="author-name"><%=config.title%></h2>
+</div>
+
+<!-- 菜单 -->
+<div id="menu-outer">
+    <% Object.keys(theme.menu).forEach(key => { %>
+        <a class="<%- is_current(theme.menu[key]) && 'active' %>" href="<%= config.url + theme.menu[key] %>"><%= key %></a>
+    <% }); %>
+</div>
