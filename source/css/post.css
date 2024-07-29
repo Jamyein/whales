@@ -110,7 +110,7 @@
 
 /*link*/
 .markdown-body a {
-  color: #a56569;
+  color: var(--change-color);
   text-decoration: none;
   transition: color 0.35s, text-decoration 0.35s;
 }
@@ -228,7 +228,7 @@
 .markdown-body code {
   padding: 8px 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
   white-space: pre;
