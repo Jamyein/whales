@@ -4,6 +4,9 @@
 
 <center><img src="./source/img/preview.png"></center>
 
+Preview
+---
+[citrusea](citrusea.cc)
 
 Install
 -------
