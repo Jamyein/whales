@@ -6,7 +6,7 @@
 
 Preview
 ---
-[citrusea](citrusea.cc)
+[citrusea](https://citrusea.cc)
 
 Install
 -------
