@@ -237,7 +237,6 @@
 .markdown-body kbd,
 .markdown-body pre {
   font-family: var(--fonts-monospace);
-  font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 8px
