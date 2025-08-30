@@ -4,7 +4,7 @@
     <%-partial('_partials/head')%>
 </head>
 
-<body>
+<body class="<%= page.layout || (is_home() ? 'home' : '') %>">
 <div class="main">
     <%-partial('_partials/header')%>
     <div id="content-outer">
@@ -14,6 +14,5 @@
     <%-partial('_partials/foobar', {}, {cache: true})%>
 </div>
 
-<%-partial('_partials/script', {}, {cache: true})%>
 </body>
 </html>

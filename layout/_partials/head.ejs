@@ -2,9 +2,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<% var title=page.title; if (is_archive()) { title=__('archive_a') + (is_month() ? ': ' + page.year + '/' + page.month :
-    is_year() ? ': ' + page.year : '' ); } else if (is_category()) { title=__('category') + ': ' + page.category; } else
-    if (is_tag()) { title=__('tag') + ': ' + page.tag; } %>
+<% 
+  var title = page.title;
+  if (is_archive()) title = __('archive_a') + (is_month() ? ': ' + page.year + '/' + page.month : 
+    is_year() ? ': ' + page.year : '');
+  else if (is_category()) title = __('category') + ': ' + page.category;
+  else if (is_tag()) title = __('tag') + ': ' + page.tag;
+%>
 
 <title>
     <% if (title){ %>
@@ -14,6 +18,6 @@
 </title>
 
 <link rel="icon" href="<%- url_for('/img/favicon.ico')%>">
-<link rel="preload" href="<%= url_for('/css/main.css') %>" as="style">
 <link rel="stylesheet" href="<%= url_for('/css/main.css') %>">
 <link rel="stylesheet" href="<%= url_for('/css/post.css') %>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
