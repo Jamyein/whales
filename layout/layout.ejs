@@ -5,13 +5,14 @@
 </head>
 
 <body class="<%= page.layout || (is_home() ? 'home' : '') %>">
-<div class="main">
+<div class="main" id="page-container">
     <%-partial('_partials/header')%>
-    <div id="content-outer">
+    <div id="content">
         <%- body %>
     </div>
-    
+    <footer>
     <%-partial('_partials/foobar', {}, {cache: true})%>
+    </footer>
 </div>
 
 </body>

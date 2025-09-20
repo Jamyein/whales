@@ -1,13 +1,9 @@
 <!-- 页脚 -->
-<div id="bottom-outer-in">
-    <div id="bottom-inner">
-    		<%= theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY') ? theme.since + '-' : '' %><%= date(new Date(), 'YYYY') %> <%= config.title %>
-
-    </div>
+<div id="footer" class="footer">
+    <%= theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY') ? theme.since + '-' : '' %><%= date(new Date(), 'YYYY') %> <%= config.title %>
     <% if(theme.link.enable) { %>
-        <div id="social-link" class="social-link">
-            <a href="<%=theme.link.rss%>">RSS</a>
-            <a href="<%=theme.link.github%>">Github</a>
-        </div>
+        <a href="<%=theme.link.rss%>">RSS</a>
+        <a href="<%=theme.link.github%>">Github</a>
+        <a href="<%=theme.link.about%>">About</a>
     <% } %>
 </div>

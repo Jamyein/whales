@@ -2,19 +2,17 @@
 language: zh-CN
 
 # main menu navigation
-menu:
-  Home: /index.html
-  Archives: /archives/index.html
-  About: /about/index.html
-
 
 site:
-  avatar: /img/avator.jpg # head portrait.
+  avatar: /img/avator.avif # head portrait.
+
+homelink: /index.html
 
 link:
   enable: true # true to enable the social media link, show you link to it.
   rss: /rss.xml
-  github: 
+  github: https://github.com/Jamyein
+  about: /about/index.html
 
 favicon: /img/favicon.ico # you can change to you ico
 

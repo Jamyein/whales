@@ -1,7 +1,13 @@
   <%-partial('_partials/recent-posts')%>
 
   <div id="paginator">
-    <%-paginator()%>
+    <div id="paginators">
+      <%-paginator()%>
+    </div> 
   </div>
 
+<% if (page.category) { %>
+  <h1><%= page.category %></h1>
+<% } else { %>
+<% } %>
 
