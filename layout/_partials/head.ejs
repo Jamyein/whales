@@ -1,23 +1,14 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<% 
-  var title = page.title;
-  if (is_archive()) title = __('archive_a') + (is_month() ? ': ' + page.year + '/' + page.month : 
-    is_year() ? ': ' + page.year : '');
-  else if (is_category()) title = __('category') + ': ' + page.category;
-  else if (is_tag()) title = __('tag') + ': ' + page.tag;
-%>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+<meta name="description" content="<%= config.description %>">
+<meta name="keywords" content="<%= config.keywords %>">
 <title>
-    <% if (title){ %>
-        <%= title %> |
-            <% } %>
-                <%= config.title %>
+  <% if (page.title) { %>
+    <%= page.title %>|<% } %><%= config.title %>
 </title>
 
 <link rel="icon" href="<%- url_for('/img/favicon.ico')%>">
-<link rel="stylesheet" href="<%= url_for('/css/main.css') %>">
-<link rel="stylesheet" href="<%= url_for('/css/post.css') %>">
+<%- css('css/main-mini.css') %> 
+<%- css('css/post-mini.css') %> 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">

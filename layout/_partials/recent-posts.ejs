@@ -3,7 +3,7 @@
     <div class="recent-post-item">
       <a href="<%=url_for(post.path)%>"><%=post.title%></a>
       <time datetime="<%=post.date.toJSON()%>">
-        <%=date(post.date, 'YYYY-MM-DD')%>
+        <%=date(post.date, 'MMMM D, YYYY')%>
       </time>    
     </div>
     <% }); %>
